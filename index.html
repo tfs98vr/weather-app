@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <h2><i class="fa-solid fa-cloud"></i>Weather App</h2>
+        <div>
+            <input type="text" id="input">
+            <button id="btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+    </header>
+    <main id="main">
+        <div class="container">
+            <img src="http://openweathermap.org/img/wn/10d@4x.png" alt="" id="currentImg">
+            <div id="local-div">
+                <h1 id="city"></h1>
+                <h2 id="day"></h2>
+                <h2 id="weather"></h2> 
+            </div>
+            <div id="current-info">
+                <h2 id="actual-temp"></h2>
+                <div class="info-div">
+                    <p><i class="fa-solid fa-arrow-up"></i></p>
+                    <p id="actual-max"></p>
+                </div>
+                <div class="info-div">
+                    <p><i class="fa-solid fa-arrow-down"></i></p>
+                    <p id="actual-min"></p>
+                </div>
+                <div class="info-div">
+                    <p><i class="fa-solid fa-wind"></i></p>
+                    <p id="wind"></p>
+                </div>
+                <div class="info-div">
+                    <p><i class="fa-solid fa-droplet"></i></p>
+                    <p id="humidity"></p>
+                </div>
+                <div class="info-div">
+                    <p><i class="fa-solid fa-umbrella"></i></p>
+                    <p id="rain"></p>
+                </div>           
+            </div>           
+        </div>
+        <div class="future">
+            <div class="week-days" id="day-1"></div>
+            <img src="" alt="" id="img-day1">
+            <div class="future-temp">
+                <div class="future-min-max">
+                    <p><i class="fa-solid fa-arrow-up"></i></p>
+                    <p id="day1-max"></p>
+                </div>
+                <div class="future-min-max">
+                    <p><i class="fa-solid fa-arrow-down"></i></p>
+                    <p id="day1-min"></p>
+                </div>     
+            </div>
+        </div>
+        <div class="future">
+            <div class="week-days" id="day-2"></div>
+            <img src="" alt="" id="img-day2">
+            <div class="future-temp">
+                <div class="future-min-max">
+                    <p><i class="fa-solid fa-arrow-up"></i></p>
+                    <p id="day2-max"></p>
+                </div>
+                <div class="future-min-max">
+                    <p><i class="fa-solid fa-arrow-down"></i></p>
+                    <p id="day2-min"></p>
+                </div>     
+            </div>
+        </div>
+        <div class="future">
+            <div class="week-days" id="day-3"></div>
+            <img src="" alt="" id="img-day3">
+            <div class="future-temp">
+                <div class="future-min-max">
+                    <p><i class="fa-solid fa-arrow-up"></i></p>
+                    <p id="day3-max"></p>
+                </div>
+                <div class="future-min-max">
+                    <p><i class="fa-solid fa-arrow-down"></i></p>
+                    <p id="day3-min"></p>
+                </div>     
+            </div>
+        </div>
+        <div class="future">
+            <div class="week-days" id="day-4"></div>
+            <img src="" alt="" id="img-day4">
+            <div class="future-temp">
+                <div class="future-min-max">
+                    <p><i class="fa-solid fa-arrow-up"></i></p>
+                    <p id="day4-max"></p>
+                </div>
+                <div class="future-min-max">
+                    <p><i class="fa-solid fa-arrow-down"></i></p>
+                    <p id="day4-min"></p>
+                </div>     
+            </div>
+        </div>
+        <div class="future">
+            <div class="week-days" id="day-5"></div>
+            <img src="" alt="" id="img-day5">
+            <div class="future-temp">
+                <div class="future-min-max">
+                    <p><i class="fa-solid fa-arrow-up"></i></p>
+                    <p id="day5-max"></p>
+                </div>
+                <div class="future-min-max">
+                    <p><i class="fa-solid fa-arrow-down"></i></p>
+                    <p id="day5-min"></p>
+                </div>     
+            </div>
+        </div>
+        <div class="future">
+            <div class="week-days" id="day-6"></div>
+            <img src="" alt="" id="img-day6">
+            <div class="future-temp">
+                <div class="future-min-max">
+                    <p><i class="fa-solid fa-arrow-up"></i></p>
+                    <p id="day6-max"></p>
+                </div>
+                <div class="future-min-max">
+                    <p><i class="fa-solid fa-arrow-down"></i></p>
+                    <p id="day6-min"></p>
+                </div>     
+            </div>
+        </div>
+    </main>
+</body>
+</html>
